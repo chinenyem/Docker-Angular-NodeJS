@@ -20,6 +20,23 @@ Host Provider: Firebase
 
 Website Hosted:  https://bartapp-6c9d8.firebaseapp.com/
 
+How to run it?
+
+You can run this application 2 different ways. 
+
+1st way:
+1.You will have to have Docker Installed
+2.Create a folder. 
+3.In that folder git clone this repo.
+4. Run the following command  docker-compose up --build
+
+2nd Way (If you don't have docker you can just run the front end)
+1. git clone this repo.
+2. npm install @angular/cli -g
+3. In the something-clever folder npm install
+4. run the command ng build
+5. run the command ng serve
+
 Why the BART API?
 The BART API provides real time arrival updates. It is widely used by more than 5,000 developers and is very reliable. There isn't a need to sing agreement to obtain an API key. It is quick and easy to use.
 
