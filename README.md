@@ -1,3 +1,10 @@
+Chinenyem Nwadiugwu LinkedIn
+https://www.linkedin.com/in/chinenyem/
+
+Other Work
+http://www.chinenyem.agency/
+https://chinenyemagency.firebaseapp.com/
+
 # Docker-Angular-NodeJS
 
 Problem: There is a need to know the real time of public transportation and to know where the user is located.
@@ -11,7 +18,7 @@ Docker Containers for containerization
 Host Provider: Firebase
 (If I had more time I would use Docker Cloud and AWS for deployment and hosting)
 
-Website:  https://bartapp-6c9d8.firebaseapp.com/
+Website Hosted:  https://bartapp-6c9d8.firebaseapp.com/
 
 Why the BART API?
 The BART API provides real time arrival updates. It is widely used by more than 5,000 developers and is very reliable. There isn't a need to sing agreement to obtain an API key. It is quick and easy to use.
@@ -40,3 +47,4 @@ For security I would secure the back end from DDOS attacks. Right now anyone can
 I would add more error handling to my backend and front end functions that will fail gracefully.
 I would create a wireframe interactive prototype and then build the front end.
 I would add a  middleware logging feature to the backend. It would log when a request was made and if it was successful.
+I would build the app using google maps and the BART API. The user would see themselves on the map and promixity of the selected train station. 
