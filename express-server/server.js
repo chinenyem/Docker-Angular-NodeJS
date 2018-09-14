@@ -38,18 +38,6 @@ app.set('port', port);
  */
 const server = http.createServer(app);
 
-//server.listen(port)
-/**
- * bind the socketIO with http server.
- */
-
-//const io = socketIO(server);
-/**
- * open socket IO connection.
- */
-
-
-
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -63,10 +51,9 @@ const io = require('socket.io').listen(server);
 
  io.on('connection', (socket) => {
     console.log('aaaaaaaa user connected');
-    socket.on('persons lists',(result) => {
-      setInterval(function(){
-        io.emit("persons lists", result);
-      }, 5000)
-
-    })
+    // socket.on('persons lists',(result) => {
+    //   setInterval(function(){
+    //     io.emit("persons lists", result);
+    //   }, 5000)
+    // })
 });
