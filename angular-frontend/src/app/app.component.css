@@ -1,0 +1,8 @@
+.departureUL{
+  display:inline !important;
+}
+
+.departureLI{
+  float:left !important;
+  display:inline !important;
+}

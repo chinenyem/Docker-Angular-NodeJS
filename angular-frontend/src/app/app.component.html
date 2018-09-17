@@ -1,0 +1,56 @@
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1"><a href="https://www.bart.gov/schedules/developers/api">BART API</a></span>
+  <span> Bay Area Rapid Transit</span>
+</nav>
+
+<div class="container">
+
+
+  <div [style.margin-top.px]="10" class="row">
+    <div class="col-md-12">
+        <h3>Your cordinates are: Latitude: {{currentLat}}  Longitude: {{currentLong}}</h3>
+        <h3>Select A Station</h3>
+    </div>
+    <br>
+    <div class="col-md-12">
+    <form class="form-inline" [formGroup]="stationForm">
+      <div class="form-group">
+        <label for="name">Stations</label>
+        <select class="form-control" id="station" formControlName="stationControl" (change)="getRouteTimes($event.target.value)">
+          <option value="">--Select A Station --</option>
+          <option *ngFor="let station of stations" [value]="station.abbr">{{station.name}}</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  </div>
+
+
+  <div [style.margin-top.px]="10" class="row">
+    <div class="col-md-12">
+        <h3>Real Time Departures Every Minute</h3>
+    </div>
+    <!-- Bootstrap Card -->
+    <div class="card" style="width: 47rem;">
+      <div class="card-body">
+        <h5 class="card-title">BART departures at {{stationName}} as of {{currentTime}}</h5>
+      </div>
+      <div class="card-body">
+          <div *ngFor="let route of listofRoutes">
+            <strong>Destination Name:</strong> {{route.destination}}
+            <div class="row">
+                <div class="col-md-12"><strong>Departure Times</strong></div>
+                <ul class="list-group list-group-flush list-inline departureUL" [style.display]="inline">
+                    <li class="list-group-item departureLI" *ngFor="let est of route.estimate" >
+                      <i class="fas fa-train"[style.color]="est.hexcolor"></i>  {{est.minutes}}min  (  {{est.length}} car )
+                    </li>
+                </ul>
+             </div>
+           </div>
+          </div>
+    </div>
+
+
+  </div>
+</div>
