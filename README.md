@@ -33,9 +33,10 @@ You can run this application 2 different ways.
 2nd Way (If you don't have docker you can just run the front end)
 1. git clone this repo.
 2. npm install @angular/cli -g
-3. In the something-clever folder npm install
-4. run the command ng build
-5. run the command ng serve
+3. npm install
+4. In the something-clever folder npm install
+5. run the command ng build
+6. run the command ng serve
 
 Why the BART API?
 The BART API provides real time arrival updates. It is widely used by more than 5,000 developers and is very reliable. There isn't a need to sing agreement to obtain an API key. It is quick and easy to use.
